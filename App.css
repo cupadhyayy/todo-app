@@ -1,0 +1,179 @@
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0e6114;
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling for the app container */
+.app {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #b9bfc5; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Styling for the header */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Container for input and add button */
+.input-container {
+  display: flex;
+  align-items: center; 
+  margin-bottom: 20px;
+  flex-wrap: wrap; 
+}
+
+/* Styling for the input field */
+.todo-input {
+  flex-grow: 1; 
+  padding: 10px;
+  border: 2px solid #141313;
+  border-radius: 20px; 
+  outline: none;
+}
+
+input {
+  padding: 5px;
+  font-size: 16px;
+  width: 100%; 
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+/* Styling for the add button */
+.add-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff; 
+  color: white;
+  border-radius: 20px; 
+  cursor: pointer;
+  transition: background-color 0.3s;
+  white-space: nowrap; 
+}
+
+/* Hover effect for the add button */
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+/* Hover Effect for buttons */
+button:hover {
+  background-color: #2980b9; 
+  transform: scale(1.05); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+/* Active effect for buttons */
+button:active {
+  background-color: #1f6391; 
+  transform: scale(1); 
+}
+
+/* Focus effect for buttons */
+button:focus {
+  outline: none;
+  border: 2px solid #3498db; 
+}
+
+/* Styling for the todo list */
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Styling for individual todo items */
+.todo-item {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #eee3e3; 
+  border: 1px solid #0f0606;
+  border-radius: 10px; 
+}
+
+/* Container for the buttons within each todo item */
+.button-container {
+  display: flex;
+  gap: 10px; 
+}
+
+/* Buttons inside each todo item */
+.todo-item button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Different colors for the complete, edit, and delete buttons */
+.todo-item button:nth-child(1) {
+  color: green; /* Complete button */
+}
+
+.todo-item button:nth-child(2) {
+  color: orange; /* Edit button */
+}
+
+.todo-item button:nth-child(3) {
+  color: red; /* Delete button */
+}
+
+/* Specific styling for completed todo items */
+.todo-item.completed span {
+  text-decoration: line-through;
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  background-color: #55db34;
+  color: rgb(180, 197, 28);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .app {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .input-container {
+    flex-direction: column;
+  }
+
+  .todo-input {
+    margin-bottom: 10px; 
+  }
+
+  .add-button {
+    margin-left: 0;
+    width: 100%; 
+    box-sizing: border-box; 
+  }
+
+  .todo-item {
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+
+  .button-container {
+    width: 100%; 
+    justify-content: flex-end; 
+  }
+}
