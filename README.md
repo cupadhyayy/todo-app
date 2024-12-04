@@ -51,7 +51,7 @@ React: A JavaScript library for building user interfaces.
 Vite: A build tool that provides a faster and leaner development experience for modern web projects.
 
 **Github Link**
-GitHub repository containing the project ( )
+GitHub repository containing the project (https://github.com/cupadhyayy/todo-app.git )
 
 
 
